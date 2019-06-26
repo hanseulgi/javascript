@@ -1,7 +1,7 @@
 
 
 # javascript 스터디
-### 자바스크립트를 깨우치다.
+### 자바스크립트를 깨우치다
 
 ### git
 git clone https://github.com/hanseulgi/javascript.git
