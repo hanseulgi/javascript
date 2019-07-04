@@ -8,8 +8,8 @@ git clone https://github.com/hanseulgi/javascript.git
 
 ### 진행
 - 인원 : 한슬기, 성우경 
-- 시간 : 오후 7시 ~ 10시
-- 일자 : 매주 화요일
+- 시간 : 오후 7시 ~ 9시
+- 일자 : 매주 월요일
 - 장소 : <a href="http://naver.me/xGXYM4dz" target="_blank">카페베네 마포도화점</a>
 
 ### 목차 
