@@ -1,0 +1,101 @@
+<style>
+#moveBtn{position: fixed;left: 10px;top:10px;}
+</style>
+<body>
+
+    <button type="button" id="moveBtn">이동</button>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div id="preId">
+        dddd
+    </div>
+    <!-- //popup -->
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+	<script src="../js/tdirect-ui.js"></script>
+    <script>
+    $("#moveBtn").on("click",function(){
+        var offset = $("#preId").offset();
+        $("html,body").animate({scrollTop:offset.top},2000);
+    });
+    </script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="header">
+        <a href="#test3">문서 내 특정 위치로 이동할거다?</a>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div id="test3">이동했어요~이동했어요~이동했어요~이동했어요~</div>
+    <br><br><br>
+    <br><br><br>
+</div>
+    <!-- //popup -->
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+	<script src="../js/tdirect-ui.js"></script>
+    <script>
+    $("a[href^='#']").click(function(event) {
+event.preventDefault(); 
+var target = $(this.hash); var header_height = $('body').height(); 
+var offset_top = target.offset().top - header_height; 
+$('html, body').animate({scrollTop: offset_top}, 500); 
+    });
+    </script>
+
+
+
+
+
+
+
+
+
+ <button onclick="fnMove('1')">div1로 이동</button>
+            <button onclick="fnMove('2')">div2로 이동</button>
+            <button onclick="fnMove('3')">div3로 이동</button>
+            <div id="div1">div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br></div>
+            <div id="div2">div2div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br></div>
+            <div id="div3">div3div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br>div1<br></div>
+        
+
+
+
+
+    function fnMove(seq){
+        var offset = $("#div" + seq).offset();
+        $('html, body').animate({scrollTop : offset.top}, 400);
+    }
+
+
+
+
