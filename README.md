@@ -2,7 +2,7 @@
 
 # javascript 스터디
 ### 주제 하나씩 정해서 스터디 진행
-#### 자바스크립트를 깨우치다 (책 읽고 개인 공부)
+#### 자바스크립트를 깨우치다
 
 ### git
 git clone https://github.com/hanseulgi/javascript.git
