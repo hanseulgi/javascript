@@ -1,18 +1,27 @@
 
 
 # javascript 스터디
-### 자바스크립트를 깨우치다
+### 주제 하나씩 정해서 스터디 진행
+#### 자바스크립트를 깨우치다 (책 읽고 개인 공부)
 
 ### git
 git clone https://github.com/hanseulgi/javascript.git
 
 ### 진행
-- 인원 : 한슬기, 성우경 
+- 인원 : 한슬기, 김소연, 민승기 
 - 시간 : 오후 7시 ~ 9시
 - 일자 : 매주 월요일
-- 장소 : <a href="http://naver.me/xGXYM4dz" target="_blank">카페베네 마포도화점</a>
+- 장소 : <a href="http://naver.me/Fh8xRCe4" target="_blank">홍대 슈퍼스타트</a>
 
-### 목차 
+
+
+
+
+
+
+
+
+### 자바스크립트를 깨우치다 목차 
 
 --------------------------------------
 chapter 1 자바스크립트 객체
