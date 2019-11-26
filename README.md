@@ -9,7 +9,7 @@ git clone https://github.com/hanseulgi/javascript.git
 
 ### 진행
 - 인원 : 한슬기, 김소연, 민승기 
-- 시간 : 오후 7시 ~ 9시
+- 시간 : pm 19:30 ~ 21:30
 - 일자 : 매주 월요일
 - 장소 : <a href="http://naver.me/Fh8xRCe4" target="_blank">홍대 슈퍼스타트</a>
 
