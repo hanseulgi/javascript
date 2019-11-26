@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+</head>
+<style>
+#container{margin:0 auto; width:1000px;}
+fieldset{margin-bottom:20px; border:1px solid #eee;}
+#total {border:none; font-weight:bold; font-size:16px; color:#f00}
+</style>
+
+<body>
+	<div id="container">
+    <h1>주문해주세염~~</h1>
+		<form>
+      <fieldset>
+        <legend>사이즈</legend>
+        <p><label><input type="checkbox" name="large" class="size" value="19000">Large - 19,900원</label></p>
+        <p><label><input type="checkbox" name="regular" class="size" value="12900">regular - 12,900원</label></p>
+      </fieldset>
+      <fieldset>
+        <legend>추가 주문</legend>        
+          <label><input type="checkbox" name="colla" class="menu" value="1500">콜라 (1500원)</label>
+          <label><input type="checkbox" name="garlic" class="menu" value="500">갈릭디핑소스 (500원)</label>
+          <label><input type="checkbox" name="spaghetti" class="menu" value="6000">스파게티(6000원)</label>
+          <label><input type="checkbox" name="cheesestick" class="menu" value="4000">치즈스틱(4개, 4000원)</label>
+          <label><input type="checkbox" name="salad" class="menu" value="3500">샐러드(3500원)</label>        
+      </fieldset>
+      <fieldset>
+        <legend>합계</legend>
+        <input type="text" id="total" name="total" class="price" readonly>
+      </fieldset>
+		</form>	
+	</div>
+
+<script>
+  var price = 0;    //기본가격 
+  var size = document.querySelectorAll(".size"); //추가메뉴들의 클래스 
+  var sideMenu = document.querySelectorAll(".menu"); //추가메뉴들의 클래스 
+  var total = document.querySelector("#total"); //합계 아이디
+  total.value = price+"원 결제해주세요!"; //합계의 값은 기본가격 + 문자 "원 결제해주세요!"  점 표기법 사용함 이거 안적어주면 합계부분 빈 상태임 
+ 
+  for(s=0; s<size.length; s++){    //사이즈 갯수만큼 반복시킴 
+    size[s].onclick = function(){  //사이즈 value 클릭이벤트시 
+      if(this.checked == true){  //여기서 말하는 this는 사이즈 나 자신을 뜻함. 체크된게 맞다면
+        price += parseInt(this.value);  //기본가격에서 해당 금액의 value값을 가한다. parseInt로 안해주니까 기본값 뒤에 찍힘(199001500원..이런식으로) 
+      }else{  
+        price -= parseInt(this.value); //그게 아닐 시 현재 금액에서 해당 금액의 value값을 감한다
+      }
+      total.value = price+"원 결제해주세요!"; // 기본가격+"원 결제해주세요!"은 합계의 값과 같다
+    } 
+  }
+  for(m=0; m<sideMenu.length; m++){    //추가메뉴들의 갯수만큼 반복시킴 
+    sideMenu[m].onclick = function(){  //사이드메뉴의 value 클릭이벤트시 
+      if(this.checked == true){  //여기서 말하는 this는 추가메뉴 나 자신을 뜻함. 체크된게 맞다면
+        price += parseInt(this.value);  //기본가격에서 해당 금액의 value값을 가한다. parseInt로 안해주니까 기본값 뒤에 찍힘(199001500원..이런식으로) 
+      }else{  
+        price -= parseInt(this.value); //그게 아닐 시 현재 금액에서 해당 금액의 value값을 감한다
+      }
+      total.value = price+"원 결제해주세요!"; // 기본가격+"원 결제해주세요!"은 합계의 값과 같다
+    } 
+  }
+</script>
+</body>
+</html>
