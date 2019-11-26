@@ -2,7 +2,7 @@
 
 # javascript 스터디
 ### 주제 하나씩 정해서 스터디 진행
-#### 자바스크립트를 깨우치다
+#### 자바스크립트를 깨우치다 (책 읽기)
 
 ### git
 git clone https://github.com/hanseulgi/javascript.git
@@ -14,11 +14,12 @@ git clone https://github.com/hanseulgi/javascript.git
 - 장소 : <a href="http://naver.me/Fh8xRCe4" target="_blank">홍대 슈퍼스타트</a>
 
 
-
-
-
-
-
+### 주제 하나씩 정해서 스터디 진행
+--------------------------------------
+- 스코프 / 함수형 프로그래밍 - 김소연
+- 제어문 - 한슬기
+- 객체 - 김소연
+- 배열 - 한슬기
 
 
 ### 자바스크립트를 깨우치다 목차 
